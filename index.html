@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#07131d">
+  <title>Restaurante Hangar — Sabor nas alturas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="noise"></div>
+  <div class="sky-lines"></div>
+
+  <!-- Entrada cinematográfica -->
+  <div id="intro" class="intro">
+    <div class="intro-grid"></div>
+    <div class="intro-brand">
+      <span class="mini-label">RESTAURANTE</span>
+      <strong>HANGAR</strong>
+      <span class="intro-rule"></span>
+      <span class="mini-label">SABOR NAS ALTURAS</span>
+    </div>
+    <div class="runway">
+      <span></span><span></span><span></span><span></span><span></span>
+    </div>
+    <div class="intro-plane" aria-hidden="true">
+      <svg viewBox="0 0 360 120">
+        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke-width="4" d="M16 62h214c25 0 44-9 69-29l39-28"/>
+          <path stroke-width="5" d="M113 62l39-43h15l-8 43M150 62l-35 28h-14l11-28"/>
+          <path stroke-width="4" d="M213 62l31 20h15l-20-20"/>
+          <path stroke-width="3" d="M73 62l-18 18M259 42l15 17"/>
+          <circle cx="230" cy="62" r="7" stroke-width="3"/>
+          <path stroke-width="4" d="M72 62H26l-10-12"/>
+        </g>
+      </svg>
+    </div>
+  </div>
+
+  <header class="nav-wrap">
+    <nav class="nav">
+      <a href="#inicio" class="brand" aria-label="Restaurante Hangar">
+        <span class="brand-ring">
+          <span>RESTAURANTE</span>
+          <b>HANGAR</b>
+          <i></i>
+        </span>
+      </a>
+      <button class="menu-toggle" aria-label="Abrir menu"><span></span><span></span></button>
+      <div class="nav-links">
+        <a class="active" href="#inicio">Início</a>
+        <a href="#cardapio">Cardápio</a>
+        <a href="#experiencia">Experiência</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#contato">Contato</a>
+      </div>
+      <a href="#reserva" class="nav-cta">Reservar mesa <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span class="plane-mark">✦</span> UM NOVO PONTO DE ENCONTRO</div>
+        <h1>Restaurante<br><em>Hangar</em></h1>
+        <p>Boa comida, bons momentos<br>e uma experiência que decola.</p>
+        <div class="hero-actions">
+          <a href="#cardapio" class="btn btn-primary">Explorar o cardápio <span>→</span></a>
+          <a href="#reserva" class="text-link">Reservar mesa <span>↗</span></a>
+        </div>
+      </div>
+
+      <!-- Avião desenhado em SVG: sem emoji e sem imagem externa -->
+      <div class="hero-aircraft" aria-hidden="true">
+        <svg viewBox="0 0 760 330">
+          <defs>
+            <filter id="softShadow"><feGaussianBlur stdDeviation="7"/></filter>
+          </defs>
+          <ellipse cx="375" cy="270" rx="220" ry="18" fill="#000" opacity=".22" filter="url(#softShadow)"/>
+          <g class="aircraft-body">
+            <path d="M82 169 C185 154 289 145 404 146 C489 147 565 163 657 189 L702 203 L657 212 C554 219 474 222 383 218 L205 203 L82 188 Z" fill="#d9dde0"/>
+            <path d="M84 169 C193 153 294 145 406 146 C489 147 560 160 653 188 L605 191 C518 176 453 171 376 171 L84 188Z" fill="#274c65"/>
+            <path d="M196 153 L326 72 L354 75 L315 158Z" fill="#e5e8e8"/>
+            <path d="M199 154 L326 72 L341 74 L294 157Z" fill="#17364b"/>
+            <path d="M430 177 L548 118 L568 122 L519 190Z" fill="#e5e8e8"/>
+            <path d="M430 177 L548 118 L557 121 L507 190Z" fill="#17364b"/>
+            <path d="M598 184 L676 148 L689 154 L642 201Z" fill="#dfe3e4"/>
+            <path d="M594 185 L676 148 L683 152 L630 201Z" fill="#17364b"/>
+            <path d="M85 170 L35 151 L26 157 L73 181Z" fill="#dfe3e4"/>
+            <path d="M31 157 L13 154 L5 161 L30 168Z" fill="#17364b"/>
+            <path d="M150 194 L179 231 L192 231 L183 197Z" fill="#17364b"/>
+            <path d="M552 204 L570 231 L583 231 L577 205Z" fill="#17364b"/>
+            <rect x="336" y="143" width="96" height="22" rx="11" fill="#102b3d"/>
+            <circle cx="443" cy="157" r="18" fill="#0d2230"/>
+            <circle cx="443" cy="157" r="8" fill="#c6d1d5"/>
+            <path d="M459 157c42-47 42 47 0 0Z" fill="#b7c1c5" opacity=".7"/>
+            <path d="M457 157c-42-47-42 47 0 0Z" fill="#b7c1c5" opacity=".7"/>
+            <circle cx="112" cy="184" r="10" fill="#101c25"/>
+            <circle cx="112" cy="184" r="4" fill="#e8edf0"/>
+          </g>
+        </svg>
+      </div>
+
+      <div class="hero-orbit orbit-one"></div>
+      <div class="hero-orbit orbit-two"></div>
+      <div class="flight-tag tag-one">FLIGHT 001 <b>HANGAR</b></div>
+      <div class="flight-tag tag-two">11:00 — 14:00</div>
+      <div class="hero-bottom">
+        <span>SCROLL PARA DECOLAR</span>
+        <i></i>
+      </div>
+    </section>
+
+    <section id="cardapio" class="menu-section section">
+      <div class="section-head reveal">
+        <div>
+          <span class="eyebrow">A BORDO DO SABOR</span>
+          <h2>Cardápio</h2>
+        </div>
+        <p>Comida de verdade, servida no ritmo do almoço.<br>Escolha seu voo gastronômico.</p>
+      </div>
+
+      <div class="menu-ticket reveal">
+        <div class="ticket-top">
+          <span>HANGAR / MENU 01</span><span>BOA VIAGEM</span>
+        </div>
+        <div class="ticket-main">
+          <div class="price-block">
+            <small>SEGUNDA A SEXTA</small>
+            <strong>R$ 33,90</strong>
+            <span>livre</span>
+          </div>
+          <div class="ticket-divider"></div>
+          <div class="price-block">
+            <small>SEGUNDA A SEXTA</small>
+            <strong>R$ 79,90</strong>
+            <span>quilo</span>
+          </div>
+          <div class="ticket-divider"></div>
+          <div class="price-block">
+            <small>SÁBADO</small>
+            <strong>R$ 43,90</strong>
+            <span>livre</span>
+          </div>
+          <div class="ticket-divider"></div>
+          <div class="price-block">
+            <small>SÁBADO</small>
+            <strong>R$ 89,90</strong>
+            <span>quilo</span>
+          </div>
+        </div>
+        <div class="ticket-bottom">
+          <span>⏱ ALMOÇO · 11H ÀS 14H</span>
+          <span>SOBREMESA INCLUSA NO VALOR</span>
+        </div>
+      </div>
+
+      <div class="floating-foods">
+        <div class="food-card card-a"><span class="food-symbol">✦</span><b>Buffet</b><small>Variedade todos os dias</small></div>
+        <div class="food-card card-b"><span class="food-symbol">◒</span><b>Sabores</b><small>Preparados com cuidado</small></div>
+        <div class="food-card card-c"><span class="food-symbol">⌁</span><b>Sobremesa</b><small>Incluída no valor</small></div>
+      </div>
+    </section>
+
+    <section id="reserva" class="reservation section">
+      <div class="reservation-bg"></div>
+      <div class="reservation-content">
+        <div class="reserve-copy reveal">
+          <span class="eyebrow">SEU LUGAR ESTÁ AQUI</span>
+          <h2>Faça sua<br><em>reserva.</em></h2>
+          <p>Preencha os dados e envie a solicitação diretamente para o WhatsApp do Restaurante Hangar.</p>
+          <div class="departure">
+            <span>PRÓXIMA DECOLAGEM</span>
+            <b>ALMOÇO · 11H — 14H</b>
+          </div>
+        </div>
+
+        <form id="reservationForm" class="reserve-form reveal">
+          <div class="form-top"><span>FORMULÁRIO DE EMBARQUE</span><b>01 / 04</b></div>
+          <label>Seu nome<input id="name" required placeholder="Como podemos te chamar?"></label>
+          <div class="form-row">
+            <label>Data<input id="date" type="date" required></label>
+            <label>Horário<input id="time" type="time" min="11:00" max="14:00" required></label>
+          </div>
+          <label>Quantidade de pessoas
+            <select id="people" required>
+              <option value="">Selecione</option><option>1 pessoa</option><option>2 pessoas</option><option>3 pessoas</option><option>4 pessoas</option><option>5 pessoas</option><option>6 pessoas</option><option>7 pessoas</option><option>8 pessoas</option><option>9+ pessoas</option>
+            </select>
+          </label>
+          <label>Observação <textarea id="note" rows="2" placeholder="Alguma informação para a equipe? (opcional)"></textarea></label>
+          <button class="btn btn-primary submit" type="submit">Enviar reserva pelo WhatsApp <span>↗</span></button>
+          <small class="form-note">A solicitação será aberta no WhatsApp. A confirmação depende da disponibilidade do restaurante.</small>
+        </form>
+      </div>
+    </section>
+
+    <section id="experiencia" class="experience section">
+      <div class="experience-map"></div>
+      <div class="experience-copy reveal">
+        <span class="eyebrow">SOBRE O HANGAR</span>
+        <h2>Mais que um<br><em>restaurante.</em></h2>
+        <p>Um ponto de encontro para quem gosta de boa comida, bons momentos e de um ambiente que foge do comum.</p>
+        <div class="route">
+          <span class="route-dot"></span>
+          <div><small>DESTINO</small><b>RESTAURANTE HANGAR</b></div>
+        </div>
+      </div>
+      <div class="cockpit-card reveal">
+        <div class="instrument"><span>ALT</span><strong>HGR</strong><small>RESTAURANTE</small></div>
+        <div class="instrument"><span>ROTA</span><strong>247</strong><small>JORGE JOSÉ</small></div>
+        <div class="compass">N<br><b>✦</b><br>S</div>
+      </div>
+    </section>
+
+    <section id="galeria" class="gallery section">
+      <div class="section-head reveal">
+        <div><span class="eyebrow">DIÁRIO DE BORDO</span><h2>Galeria</h2></div>
+        <p>Este espaço foi preparado para receber<br>as fotos reais do restaurante.</p>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-placeholder large reveal"><span>FOTO REAL DO HANGAR</span><b>01</b></div>
+        <div class="gallery-placeholder reveal"><span>PRATO / BUFFET</span><b>02</b></div>
+        <div class="gallery-placeholder reveal"><span>AMBIENTE</span><b>03</b></div>
+        <div class="gallery-placeholder reveal"><span>DETALHE</span><b>04</b></div>
+        <div class="gallery-placeholder reveal"><span>EXPERIÊNCIA</span><b>05</b></div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contato">
+    <div class="footer-flight"></div>
+    <div class="footer-main">
+      <div class="footer-brand"><span>RESTAURANTE</span><strong>HANGAR</strong><small>AQUI O SABOR TAMBÉM DECOLA.</small></div>
+      <div class="footer-item"><small>ENDEREÇO</small><b>Rua Jorge José da Silva, 247</b><span>Santa Catarina</span></div>
+      <div class="footer-item"><small>WHATSAPP</small><a href="https://wa.me/5548988544408" target="_blank" rel="noopener">(48) 98854-4408</a><span>Faça sua reserva</span></div>
+      <div class="footer-item"><small>HORÁRIO</small><b>Segunda a sábado</b><span>11h às 14h</span></div>
+    </div>
+    <div class="footer-bottom"><span>© <span id="year"></span> Restaurante Hangar</span><span>Todos os direitos reservados.</span></div>
+  </footer>
+
+  <div id="toast" class="toast">Abrindo o WhatsApp…</div>
+  <script src="script.js"></script>
+</body>
+</html>
